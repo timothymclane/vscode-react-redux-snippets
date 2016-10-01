@@ -1,0 +1,52 @@
+{
+    "name": "react-redux-es6-snippets",
+    "displayName": "React Redux ES6 Snippets",
+    "description": "ES6 Snippets with arrow functions for React-Redux",
+    "version": "1.0.0",
+    "publisher": "timothymclane",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./src/snippets/redux.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./src/snippets/redux.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./src/snippets/redux.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./src/snippets/redux.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./src/snippets/functional-react.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./src/snippets/functional-react.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./src/snippets/functional-react.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./src/snippets/functional-react.json"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    }
+}
