@@ -2,11 +2,15 @@
     "name": "react-redux-es6-snippets",
     "displayName": "React Redux ES6 Snippets",
     "description": "ES6 Snippets with arrow functions for React-Redux",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "timothymclane",
     "repository": {
         "type": "git",
         "url": "https://github.com/timothymclane/vscode-react-redux-snippets.git"
+    },
+    "icon": "images/logo.png",
+    "galleryBanner": {
+        "color": "#ffffff"
     },
     "engines": {
         "vscode": "^1.5.0"
