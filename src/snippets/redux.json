@@ -10,7 +10,7 @@
 			"\t\tcase ${ACTION_TYPE_2}:",
 			"\t\t\treturn state;",
 			"\t\tdefault:",
-			"\t\t\treturn state",
+			"\t\t\treturn state;",
 			"\t}",
 			"}"
 		],
