@@ -76,7 +76,7 @@
 		"prefix": "mapDispatchToProps",
 		"body": [
 			"const mapDispatchToProps = (dispatch) => ({",
-			"\t...bindActionCreators(actions, dispatch),",
+			"\t...bindActionCreators(${actionCreators}, dispatch),",
 			"});",
 			""
 		],
