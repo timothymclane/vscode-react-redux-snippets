@@ -28,7 +28,7 @@
 			"\t\t${id:prop}: state.${prop}",
 			"\t}",
 			"}",
-			"\t",
+			"",
 			"const mapDispatchToProps = (dispatch, ownProps) => {",
 			"\treturn {",
 			"\t\t${dispatch1}: () =>{",
@@ -36,13 +36,13 @@
 			"\t\t}",
 			"\t}",
 			"}",
-			"\t",
+			"",
 			"const mergeProps = (stateProps, dispatchProps, ownProps) => {",
 			"\treturn {",
 			"\t\t${mergeProp}: ${mergePropVal}",
 			"\t}",
 			"}",
-			"\t",
+			"",
 			"export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(${component})"
 		],
 		"description": "A Redux container component"
@@ -67,20 +67,18 @@
 			"\t\t\tdispatch(${actionCreator})",
 			"\t\t}",
 			"\t}",
-			"}",
-			"\t"
+			"}"
 		],
 		"description": "A Redux mapDispatchToProps function"
 	},
 	"Redux mapDispatchToProps + bindActionCreators function": {
-		"prefix": "mapDispatchToProps",
+		"prefix": "mapDispatchToPropsBind",
 		"body": [
 			"const mapDispatchToProps = (dispatch) => ({",
 			"\t...bindActionCreators(${actionCreators}, dispatch),",
-			"});",
-			""
+			"});"
 		],
-		"description": "A Redux mapDispatchToProps + bindActionCreators function"
+		"description": "A Redux mapDispatchToProps function using bindActionCreators"
 	},
 	"Redux mergeProps function": {
 		"prefix": "mergeProps",

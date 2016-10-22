@@ -10,6 +10,7 @@ React-Redux snippets for Visual Studio Code using ES6 and arrow functions.
 | `container→`  | Redux container with mapStateToProps, mapDispatchToProps, mergeProps, and connect functions |
 | `mapStateToProps→`  | mapStateToProps arrow function |
 | `mapDispatchToProps→`  | mapDispatchToProps arrow function |
+| `mapDispatchToPropsBind→`  | mapDispatchToProps arrow function using bindActionCreators |
 | `mergeProps→`  | mergeProps arrow function |
 | `connect→`  | export default connect function |
 | `component→`  | functional React component |
