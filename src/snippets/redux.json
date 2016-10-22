@@ -72,6 +72,16 @@
 		],
 		"description": "A Redux mapDispatchToProps function"
 	},
+	"Redux mapDispatchToProps + bindActionCreators function": {
+		"prefix": "mapDispatchToProps",
+		"body": [
+			"const mapDispatchToProps = (dispatch) => ({",
+			"\t...bindActionCreators(${actionCreators}, dispatch),",
+			"});",
+			""
+		],
+		"description": "A Redux mapDispatchToProps + bindActionCreators function"
+	},
 	"Redux mergeProps function": {
 		"prefix": "mergeProps",
 		"body": [
