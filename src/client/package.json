@@ -1,0 +1,54 @@
+{
+  "name": "react-redux-es6-snippets",
+  "displayName": "React Redux ES6 Snippets",
+  "description": "ES6 Snippets with arrow functions for React-Redux",
+  "version": "2.0.0-alpha1",
+  "publisher": "timothymclane",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timothymclane/vscode-react-redux-snippets.git"
+  },
+  "icon": "images/logo.png",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "configuration": {
+      "title": "ES6 React-Redux Snippets",
+      "properties": {
+        "reactReduxSnippets.LinterRules": {
+          "type": "string",
+          "default": "Loose",
+          "description": "Defines semicolon use for snippets",
+          "enum": [
+            "Loose",
+            "Strict"
+          ]
+        }
+      }
+    },
+    "scripts": {
+      "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+      "compile": "tsc -watch -p ./",
+      "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "dependencies": {
+      "vscode-languageclient": "^2.2.1"
+    },
+    "devDependencies": {
+      "typescript": "^2.0.3",
+      "typings": "^2.0.0",
+      "vscode": "^1.0.3"
+    }
+  }
+}
