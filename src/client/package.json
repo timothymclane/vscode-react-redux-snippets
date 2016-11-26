@@ -2,7 +2,7 @@
   "name": "react-redux-es6-snippets",
   "displayName": "React Redux ES6 Snippets",
   "description": "ES6 Snippets with arrow functions for React-Redux",
-  "version": "2.0.0-alpha1",
+  "version": "2.0.0",
   "publisher": "timothymclane",
   "repository": {
     "type": "git",

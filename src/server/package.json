@@ -1,7 +1,7 @@
 {
     "name": "react-redux-es6-snippets-server",
     "description": "Server for React-Redux ES6 Snippets.",
-    "version": "2.0.0-alpha1",
+    "version": "2.0.0",
     "publisher": "timothymclane",
     "author": "Timothy McLane",
     "license": "MIT",
