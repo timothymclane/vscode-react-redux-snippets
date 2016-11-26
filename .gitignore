@@ -3,3 +3,4 @@ Thumbs.db
 /src/client/out/
 **/*/npm-debug.log
 /src/client/server
+/src/client/out
