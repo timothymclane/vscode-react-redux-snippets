@@ -29,4 +29,4 @@ camelCased identifiers support abbreviations, as shown below.
 ![abbreviations](src/client/images/abbreviation.gif)
 
 ## Settings
-As of version 2.0.0, settings for loose and strict linter options are available. With loose, semicolons are generally omitted, while strict requires semicolons after every statement or function call.
+As of version 2.0.0, settings for loose and strict linter options are available. With loose, semicolons are generally omitted, while strict requires semicolons after every statement or function call. These settings can be accessed under reactReduxSnippets.
