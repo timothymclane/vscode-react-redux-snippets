@@ -22,8 +22,8 @@ Snippets support .js, .jsx, .ts, and .tsx extensions.
 
 Type part of the snippet and hit `Enter` or `Tab` and the snippet will unfold.
 
-![container](images/container.gif)
+![container](src/client/images/container.gif)
 
 camelCased identifiers support abbreviations, as shown below.
 
-![abbreviations](images/abbreviation.gif)
+![abbreviations](src/client/images/abbreviation.gif)
