@@ -72,6 +72,7 @@ connection.onCompletionResolve((item: CompletionItem): CompletionItem => {
 	const es6Snippet = es6Snippets.filter(snippet => snippet.prefix == item.data);
 	if (es6Snippet.length > 0) {
 		item.insertText = getSnippet(es6Snippet[0]);
+		item.insertTextFormat = 2;
 		item.documentation = es6Snippet[0].description
 	}
 	return item;

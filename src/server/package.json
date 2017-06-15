@@ -1,7 +1,7 @@
 {
     "name": "react-redux-es6-snippets-server",
     "description": "Server for React-Redux ES6 Snippets.",
-    "version": "2.0.2",
+    "version": "2.1.0",
     "publisher": "timothymclane",
     "author": "Timothy McLane",
     "license": "MIT",
@@ -9,11 +9,11 @@
         "node": "*"
     },
     "dependencies": {
-        "vscode-languageserver": "^2.2.0"
+        "vscode-languageserver": "^3.3.0"
     },
     "devDependencies": {
-        "typescript": "^2.0.3",
-        "@types/node": "6.0.51"
+        "@types/node": "^7.0.31",
+        "typescript": "^2.3.4"
     },
     "scripts": {
         "compile": "installServerIntoExtension ../client ./package.json ./tsconfig.json && tsc -p .",
