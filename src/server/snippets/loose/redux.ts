@@ -2,12 +2,12 @@ const snippets = [
     {
 		"prefix": "reducer",
 		"body": [
-			"const {{name}}InitialState = {}",
-			"{{export }}const {{name}} = (state = {{name}}InitialState, action) => {",
+			"const ${1:name}InitialState = {}",
+			"${export }const ${1:name} = (state = ${1:name}InitialState, action) => {",
 			"\tswitch (action.type) {",
-			"\t\tcase {{ACTION_TYPE_1}}:",
+			"\t\tcase ${2:ACTION_TYPE_1}:",
 			"\t\t\treturn state",
-			"\t\tcase {{ACTION_TYPE_2}}:",
+			"\t\tcase ${3:ACTION_TYPE_2}:",
 			"\t\t\treturn state",
 			"\t\tdefault:",
 			"\t\t\treturn state",
@@ -20,30 +20,30 @@ const snippets = [
 		"prefix": "container",
 		"body": [
 			"import { connect } from 'react-redux'",
-			"import {{component}} from '{{componentPath}}'",
-			"import {{{actionCreator}}} from '{{actionCreatorPath}}'",
+			"import ${1:component} from '${2:componentPath}'",
+			"import {${3:actionCreator}} from '${4:actionCreatorPath}'",
 			"",
 			"const mapStateToProps = (state, ownProps) => {",
 			"\treturn {",
-			"\t\t{{id:prop}}: state.{{prop}}",
+			"\t\t${5:prop}: state.${6:prop}",
 			"\t}",
 			"}",
 			"",
 			"const mapDispatchToProps = (dispatch, ownProps) => {",
 			"\treturn {",
-			"\t\t{{dispatch1}}: () => {",
-			"\t\t\tdispatch({{actionCreator}})",
+			"\t\t${7:dispatch1}: () => {",
+			"\t\t\tdispatch(${3:actionCreator})",
 			"\t\t}",
 			"\t}",
 			"}",
 			"",
 			"const mergeProps = (stateProps, dispatchProps, ownProps) => {",
 			"\treturn {",
-			"\t\t{{mergeProp}}: {{mergePropVal}}",
+			"\t\t${8:mergeProp}: ${9:mergePropVal}",
 			"\t}",
 			"}",
 			"",
-			"export default connect(mapStateToProps, mapDispatchToProps, mergeProps)({{component}})"
+			"export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(${1:component})"
 		],
 		"description": "A Redux container component"
 	},
@@ -52,7 +52,7 @@ const snippets = [
 		"body": [
 			"const mapStateToProps = (state, ownProps) => {",
 			"\treturn {",
-			"\t\t{{id:prop}}: state.{{prop}}",
+			"\t\t${1:prop}: state.${2:prop}",
 			"\t}",
 			"}"
 		],
@@ -63,8 +63,8 @@ const snippets = [
 		"body": [
 			"const mapDispatchToProps = (dispatch, ownProps) => {",
 			"\treturn {",
-			"\t\t{{dispatch1}}: () => {",
-			"\t\t\tdispatch({{actionCreator}})",
+			"\t\t${1:dispatch1}: () => {",
+			"\t\t\tdispatch(${2:actionCreator})",
 			"\t\t}",
 			"\t}",
 			"}"
@@ -75,8 +75,8 @@ const snippets = [
 		"prefix": "mapDispatchToPropsBind",
 		"body": [
 			"const mapDispatchToProps = (dispatch) => ({",
-			"\t...bindActionCreators({{actionCreators}}, dispatch),",
-			"});"
+			"\t...bindActionCreators(${1:actionCreators}, dispatch),",
+			"})"
 		],
 		"description": "A Redux mapDispatchToProps function using bindActionCreators"
 	},
@@ -85,7 +85,7 @@ const snippets = [
 		"body": [
 			"const mergeProps = (stateProps, dispatchProps, ownProps) => {",
 			"\treturn {",
-			"\t\t{{mergeProp}}: {{mergePropVal}}",
+			"\t\t${1:mergeProp}: ${2:mergePropVal}",
 			"\t}",
 			"}"
 		],
@@ -94,7 +94,7 @@ const snippets = [
 	{
 		"prefix": "connect",
 		"body": [
-			"export default connect(mapStateToProps, mapDispatchToProps, mergeProps)({{component}})"
+			"export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(${1:component})"
 		],
 		"description": "A Redux connect function"
 	}

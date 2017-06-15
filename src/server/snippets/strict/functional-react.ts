@@ -5,14 +5,15 @@ const snippets = [
         body: [
             "import React from 'react';",
             "",
-            "{{export }}const {{component}} = (props) => (",
+            "${1:export }const ${2:Component} = (props) => (",
             "\t<div>",
-            "\t\t{{{children}}}",
+            "\t\t{props.${3:children}}",
             "\t</div>",
             ");",
             "",
-            "export default {{component}};"
+            "export default ${2:Component};"
         ],
+
         description: "A functional React component with implicit return using arrow function notation"
     },
     {
@@ -21,15 +22,15 @@ const snippets = [
         [
             "import React from 'react';",
             "",
-            "const {{component}} = (props) => {",
+            "${1:export }const ${2:Component} = (props) => {",
             "\treturn(",
             "\t\t<div>",
-            "\t\t\t{{{children}}}",
+            "\t\t\t{props.${3:children}}",
             "\t\t</div>",
             "\t);",
             "};",
             "",
-            "export default {{component}};"
+            "export default ${2:Component};"
         ],
         description: "A functional React component with explicit return using arrow function notation"
     }
