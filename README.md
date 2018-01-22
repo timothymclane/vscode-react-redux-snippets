@@ -1,3 +1,6 @@
+# NO LONGER ACTIVELY MAINTAINED
+I am not actively using or developing this extension anymore. As has happened previously, it is likely that future VS Code API changes will cause this extension to totally break and no longer function. I may eventually revive it for personal learning, but that should not be expected.
+
 # React-Redux ES6 Snippets for Visual Studio Code
 
 React-Redux snippets for Visual Studio Code using ES6 and arrow functions.
